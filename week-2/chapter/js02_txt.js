@@ -10,6 +10,15 @@
       Filename: js02.js
  */
 
+// declare global constants for application
+const EMP_COST = 100; //photography hourly rate
+const BOOK_COST = 350; //cost of memory book
+const REPRO_COST = 1250; // cost of reproduction rights
+const TRAVEL_COST = 2; // travel cost per mile
+
+// setup the form when page loads
+window.addEventListener("load" , setupform);
+
 // set the form's default values
 function setupform() {
   document.getElementById("photoNum").value = 1;
