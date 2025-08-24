@@ -9,17 +9,17 @@
       Filename: project02-02.js
  */
 
- // Declare variables and assign values
+// Declare variables and assign values
 function verifyForm() {
-  let name= document.getElementById("name").value;
-  let email= document.getElementById("email").value;
-  let phone= document.getElementById("phone").value;
-}
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
 
- // Conditional check using &&
- (name && email && phone)
-  ? window.alert("Thank you")
-  : window.alert("Please fill in all fields");
+  // Conditional check using &&
+  name && email && phone
+    ? window.alert("Thank you")
+    : window.alert("Please fill in all fields");
+}
 
 // event listener to submit button
 document.getElementById("submit").addEventListener("click", verifyForm);
