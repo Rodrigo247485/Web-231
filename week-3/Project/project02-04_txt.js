@@ -48,8 +48,12 @@ function calculateTotal(){
   cost += buySalad ? SALAD_PRICE : 0;
 
   document.getElementById("foodTotal").innerHTML = formatCurrency(cost);
+
   let tax = cost * SALES_TAX;
+
   document.getElementById("foodTax").innerHTML = formatCurrency(tax);
+
   let total = cost + tax;
-  document.getElementById("totalBill").innerHTML = formatCurrency(totalCost);
+
+  document.getElementById("totalBill").innerHTML = formatCurrency(total);
 }
