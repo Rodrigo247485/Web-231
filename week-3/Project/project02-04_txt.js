@@ -9,14 +9,10 @@
       Filename: project02-04.js
  */
 
-
-
-
-
 // Function to display a numeric value as a text string in the format $##.##
- function formatCurrency(value) {
-    return "$" + value.toFixed(2);
- }
+function formatCurrency(value) {
+  return "$" + value.toFixed(2);
+}
 
 // Declare constants
 const CHICKEN_PRICE = 10.95;
@@ -33,7 +29,7 @@ document.getElementById("burger").addEventListener("click", calculateTotal);
 document.getElementById("salmon").addEventListener("click", calculateTotal);
 document.getElementById("salad").addEventListener("click", calculateTotal);
 
-function calculateTotal(){
+function calculateTotal() {
   let cost = 0;
   let buyChicken = document.getElementById("chicken").checked;
   let buyHalibut = document.getElementById("halibut").checked;
